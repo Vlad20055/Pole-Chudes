@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>images/Backgroung.jpg</file>
+        <file>images/BackgroundForGame.jpeg</file>
+        <file>images/BackgroundForLetters.webp</file>
+        <file>images/BackgroundForMenu.jpg</file>
+        <file>images/500.jpeg</file>
+        <file>images/600.jpeg</file>
+        <file>images/700.jpeg</file>
+        <file>images/800.jpeg</file>
+        <file>images/1000.jpeg</file>
+        <file>images/bankrot.png</file>
+        <file>images/chest.png</file>
+        <file>images/Key-Free-PNG-Image.png</file>
+        <file>images/Automobile.jpeg</file>
+        <file>images/Деньги.jpg</file>
+        <file>images/Компьютер.jpeg</file>
+        <file>images/Кофемолка.jpg</file>
+        <file>images/Микроволновка.jpg</file>
+        <file>images/Мультиварка.jpg</file>
+        <file>images/Стиралка.jpeg</file>
+        <file>images/Суперприз.webp</file>
+        <file>images/Телевизор.webp</file>
+        <file>images/Утюг.jpg</file>
+    </qresource>
+    <qresource prefix="/snd">
+        <file>sounds/baraban.mp3</file>
+        <file>sounds/baraban_1995_hq.mp3</file>
+        <file>sounds/nevernoe-slovo.mp3</file>
+        <file>sounds/pole_auto.mp3</file>
+        <file>sounds/pole-chudes-fanfary-1.mp3</file>
+        <file>sounds/pole-chudes-super-igra-2.mp3</file>
+        <file>sounds/pole_cudes-60-seconds.mp3</file>
+        <file>sounds/pole_letter_correct.mp3</file>
+        <file>sounds/pole_letter_wrong.mp3</file>
+        <file>sounds/prizes.mp3</file>
+        <file>sounds/SectorKey.mp3</file>
+        <file>sounds/Банкрот2 .mp3</file>
+        <file>sounds/Нет (2).mp3</file>
+        <file>sounds/Откройте!.mp3</file>
+        <file>sounds/ПравильноеСлово.mp3</file>
+        <file>sounds/Сектор плюс.mp3</file>
+        <file>sounds/Сектор приз.mp3</file>
+        <file>images/photo_2024-04-26_18-11-25.jpg</file>
+    </qresource>
+</RCC>
