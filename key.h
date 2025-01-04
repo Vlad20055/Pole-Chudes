@@ -18,6 +18,7 @@ private:
 
 public:
     Key();
+
     void selectKey();
     void returnDefaultState();
 };

@@ -25,7 +25,7 @@
 #include "prize.h"
 #include "prizeimage.h"
 
-const int NUMBER_OF_TASKS = 25;
+const int NUMBER_OF_TASKS = 35;
 const int MAX_NUMBER_OF_LETTERS = 12;
 const int MEDIUM_VOLUME = 50;
 const int FREQUENCY_OF_TIMER = 1000 / 60;
