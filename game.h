@@ -24,12 +24,13 @@
 #include "car.h"
 #include "prize.h"
 #include "prizeimage.h"
+#include <filesystem>
 
 const int NUMBER_OF_TASKS = 35;
 const int MAX_NUMBER_OF_LETTERS = 12;
 const int MEDIUM_VOLUME = 50;
 const int FREQUENCY_OF_TIMER = 1000 / 60;
-const QString FILE_WITH_TASKS = "/home/vlad/QTprojects/PoleChudes/tasks.txt";
+const QString FILE_WITH_TASKS = QString::fromStdString(std::filesystem::current_path().u8string())  + QString("/") + QString("tasks.txt");
 const QString SUCCESSFUL_FILE_OPENING = "Файл успешно открыт!";
 const QString ERROR_FILE_OPENING = "Не удалось открыть файл!!!";
 const QString ENABLED_COLOR_MODE = "background-color: rgb(46, 194, 126); color: rgb(200, 0, 0);";
@@ -39,23 +40,23 @@ const QString GREEN_COLOUR_MODE = "background-color: green; color: rgb(36, 31, 4
 const QString RED_COLOUR_MODE = "background-color: red; color: rgb(36, 31, 49);";
 const QString PURPLE_COLOUR_MODE = "background-color: purple; color: rgb(36, 31, 49)";
 
-const QString SOUND_FOR_BARABAN = "/home/vlad/QTprojects/PoleChudes/sounds/baraban.mp3";
-const QString MUSIC_FOR_BEGINING = "/home/vlad/QTprojects/PoleChudes/sounds/pole-chudes-fanfary-1.mp3";
-const QString MUSIC_FOR_THE_RIGHT_KEY = "/home/vlad/QTprojects/PoleChudes/sounds/pole_auto.mp3";
-const QString SOUND_FOR_RIGHT_LETTER = "/home/vlad/QTprojects/PoleChudes/sounds/pole_letter_correct.mp3";
-const QString SOUND_FOR_PRIZES = "/home/vlad/QTprojects/PoleChudes/sounds/prizes.mp3";
-const QString OPEN_THE_LETTERS = "/home/vlad/QTprojects/PoleChudes/sounds/Откройте!.mp3";
-const QString NO = "/home/vlad/QTprojects/PoleChudes/sounds/Нет (2).mp3";
-const QString SOUND_FOR_WRONG_LETTER = "/home/vlad/QTprojects/PoleChudes/sounds/pole_letter_wrong.mp3";
-const QString MUSIC_FOR_BARABAN = "/home/vlad/QTprojects/PoleChudes/sounds/baraban_1995_hq.mp3";
-const QString SOUND_FOR_SUPERGAME = "/home/vlad/QTprojects/PoleChudes/sounds/pole-chudes-super-igra-2.mp3";
-const QString MUSIC_FOR_SUPERGAME = "/home/vlad/QTprojects/PoleChudes/sounds/pole_cudes-60-seconds.mp3";
-const QString SOUND_FOR_SECTOR_PLUS = "/home/vlad/QTprojects/PoleChudes/sounds/Сектор плюс.mp3";
-const QString SOUND_FOR_BANKROT = "/home/vlad/QTprojects/PoleChudes/sounds/Банкрот2 .mp3";
-const QString SOUND_FOR_SECTOR_KEY = "/home/vlad/QTprojects/PoleChudes/sounds/SectorKey.mp3";
-const QString SOUND_FOR_SECTOR_PRIZE = "/home/vlad/QTprojects/PoleChudes/sounds/Сектор приз.mp3";
-const QString SOUND_FOR_RIGHT_WORD = "/home/vlad/QTprojects/PoleChudes/sounds/ПравильноеСлово.mp3";
-const QString SOUND_FOR_WRONG_WORD = "/home/vlad/QTprojects/PoleChudes/sounds/nevernoe-slovo.mp3";
+const QString SOUND_FOR_BARABAN = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/baraban.mp3");
+const QString MUSIC_FOR_BEGINING = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/pole-chudes-fanfary-1.mp3");
+const QString MUSIC_FOR_THE_RIGHT_KEY = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/pole_auto.mp3");
+const QString SOUND_FOR_RIGHT_LETTER = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/pole_letter_correct.mp3");
+const QString SOUND_FOR_PRIZES = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/prizes.mp3");
+const QString OPEN_THE_LETTERS = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/Откройте!.mp3");
+const QString NO = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/Нет (2).mp3");
+const QString SOUND_FOR_WRONG_LETTER = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/pole_letter_wrong.mp3");
+const QString MUSIC_FOR_BARABAN = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/baraban_1995_hq.mp3");
+const QString SOUND_FOR_SUPERGAME = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/pole-chudes-super-igra-2.mp3");
+const QString MUSIC_FOR_SUPERGAME = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/pole_cudes-60-seconds.mp3");
+const QString SOUND_FOR_SECTOR_PLUS = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/Сектор плюс.mp3");
+const QString SOUND_FOR_BANKROT = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/Банкрот2 .mp3");
+const QString SOUND_FOR_SECTOR_KEY = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/SectorKey.mp3");
+const QString SOUND_FOR_SECTOR_PRIZE = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/Сектор приз.mp3");
+const QString SOUND_FOR_RIGHT_WORD = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/ПравильноеСлово.mp3");
+const QString SOUND_FOR_WRONG_WORD = QString::fromStdString(std::filesystem::current_path().u8string()) + QString("/sounds/nevernoe-slovo.mp3");
 
 const QString TEXT_FOR_BARABAN = "Вращайте барабан";
 const QString TEXT_FOR_SECTOR_PLUS = "Сектор ПЛЮС на барабане! \nОткройте любую букву";
